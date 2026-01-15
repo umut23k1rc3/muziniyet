@@ -1,0 +1,29 @@
+{
+  "technology": {
+    "title": "Technology Careers",
+    "careers": [
+      "Software Developer",
+      "Data Analyst",
+      "Cyber Security Specialist",
+      "Game Developer"
+    ]
+  },
+  "creative": {
+    "title": "Creative Careers",
+    "careers": [
+      "Graphic Designer",
+      "UI/UX Designer",
+      "Animator",
+      "Video Editor"
+    ]
+  },
+  "business": {
+    "title": "Business Careers",
+    "careers": [
+      "Entrepreneur",
+      "Marketing Specialist",
+      "Project Manager",
+      "Financial Analyst"
+    ]
+  }
+}
