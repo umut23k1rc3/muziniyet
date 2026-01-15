@@ -1,5 +1,5 @@
-#🎓 Career Guidance Discord Bot
-📌 Project Overview
+🎓 CAREER GUIDANCE DISCORD BOT
+📌 PROJECT OVERVIEW
 
 Career Guidance Discord Bot is a Python-based Discord application designed to help users discover suitable career paths based on their interests.
 The project is developed as a demo/MVP and follows a modular, professional software architecture.
@@ -12,7 +12,7 @@ Individuals seeking a career change
 
 Educational and portfolio use cases
 
-🎯 Project Goals
+🎯 PROJECT GOALS
 
 Provide personalized career recommendations
 
@@ -24,7 +24,7 @@ Follow a technical specification–driven development process
 
 Deliver a scalable demo version ready for future expansion
 
-🛠 Technologies Used
+🛠 TECHNOLOGIES USED
 
 Python 3.10+
 
@@ -34,7 +34,7 @@ JSON-based data storage
 
 Discord UI Components (Buttons & Views)
 
-📁 Project Structure
+📁 PROJECT STRUCTURE
 career-guidance-bot/
 │
 ├── bot.py                  # Main bot entry point
@@ -51,14 +51,14 @@ career-guidance-bot/
 └── ui/
     └── views.py            # Discord button UI components
 
-⚙️ Installation & Setup
-1️⃣ Requirements
+⚙️ INSTALLATION & SETUP
+1️⃣ REQUIREMENTS
 
 Python 3.10 or newer
 
 A Discord Bot Token
 
-2️⃣ Install Dependencies
+2️⃣ INSTALL DEPENDENCIES
 pip install -r requirements.txt
 
 
@@ -66,16 +66,16 @@ Or manually:
 
 pip install -U discord.py
 
-3️⃣ Configuration
+3️⃣ CONFIGURATION
 
 Edit config.py:
 
 TOKEN = "YOUR_DISCORD_BOT_TOKEN"
 
-4️⃣ Run the Bot
+4️⃣ RUN THE BOT
 python bot.py
 
-🤖 How the Bot Works
+🤖 HOW THE BOT WORKS
 
 User types !start in Discord
 
@@ -87,7 +87,7 @@ Bot responds with personalized career suggestions
 
 Responses are ephemeral, meaning only the user can see them.
 
-🧠 Reusable Components from Previous Projects
+🧠 REUSABLE COMPONENTS FROM PREVIOUS PROJECTS
 
 The following components are standard Discord bot patterns and can be reused:
 
@@ -99,7 +99,7 @@ JSON-based configuration and data loading
 
 Modular folder structure
 
-✍️ Custom Developed Components
+✍️ CUSTOM DEVELOPED COMPONENTS
 
 The following parts are project-specific and written from scratch:
 
@@ -113,7 +113,7 @@ Button-based UI experience
 
 Career recommendation responses
 
-🧩 Areas That May Require External Support
+🧩 AREAS THAT MAY REQUIRE EXTERNAL SUPPORT
 
 Advanced Discord features (Slash commands, Select menus)
 
@@ -125,7 +125,7 @@ User analytics and logging
 
 Multi-language support
 
-✅ Independently Manageable Areas
+✅ INDEPENDENTLY MANAGEABLE AREAS
 
 Core Python logic
 
@@ -137,7 +137,7 @@ JSON data handling
 
 Documentation and testing
 
-🚀 Future Improvements
+🚀 FUTURE IMPROVEMENTS
 
 /start slash command support
 
@@ -149,12 +149,12 @@ Web dashboard for admins
 
 Docker & CI/CD pipeline
 
-📄 License
+📄 LICENSE
 
 This project is developed for educational purposes only.
 Commercial use is not permitted without explicit permission.
 
-⭐ Final Notes
+⭐ FINAL NOTES
 
 This project is suitable for:
 
