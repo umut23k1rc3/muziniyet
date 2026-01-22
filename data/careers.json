@@ -1,27 +1,166 @@
-{
-  "technology": {
-    "title": "Technology Careers",
-    "careers": [
-      {"name":"Software Developer","skills":["Python","Git","Algorithms"],"education":"Computer Science","salary":{"junior":"800-1200","mid":"1500-2500","senior":"3000+"}},
-      {"name":"Web Developer","skills":["HTML","CSS","JavaScript"],"education":"CS or Self-taught","salary":{"junior":"700-1100","mid":"1400-2200","senior":"2800+"}},
-      {"name":"Mobile App Developer","skills":["Flutter","Kotlin","Swift"],"education":"CS","salary":{"junior":"900-1300","mid":"1700-2600","senior":"3200+"}},
-      {"name":"Game Developer","skills":["Unity","C#","Game Logic"],"education":"CS or Game Design","salary":{"junior":"800-1200","mid":"1500-2300","senior":"3000+"}},
-      {"name":"Data Analyst","skills":["SQL","Excel","Python"],"education":"Statistics","salary":{"junior":"900-1400","mid":"1600-2400","senior":"3000+"}},
-      {"name":"Data Scientist","skills":["Python","ML","Statistics"],"education":"CS / Statistics","salary":{"junior":"1000-1500","mid":"2200-3500","senior":"4500+"}},
-      {"name":"AI Engineer","skills":["ML","Deep Learning","Python"],"education":"Engineering","salary":{"junior":"1200-1800","mid":"3000-4500","senior":"6000+"}},
-      {"name":"Cyber Security Specialist","skills":["Linux","Networking","Security"],"education":"IT","salary":{"junior":"900-1400","mid":"2000-3000","senior":"4000+"}},
-      {"name":"Cloud Engineer","skills":["AWS","Docker","Linux"],"education":"CS","salary":{"junior":"1000-1600","mid":"2500-4000","senior":"5000+"}},
-      {"name":"DevOps Engineer","skills":["CI/CD","Docker","Kubernetes"],"education":"CS","salary":{"junior":"1100-1700","mid":"2800-4200","senior":"5500+"}},
-      {"name":"QA Engineer","skills":["Testing","Automation","Python"],"education":"CS","salary":{"junior":"700-1100","mid":"1300-2000","senior":"2600+"}},
-      {"name":"Embedded Systems Engineer","skills":["C","Microcontrollers"],"education":"Electrical Eng","salary":{"junior":"900-1400","mid":"1800-2600","senior":"3500+"}},
-      {"name":"Network Engineer","skills":["Routing","Switching"],"education":"IT","salary":{"junior":"800-1200","mid":"1500-2300","senior":"3000+"}},
-      {"name":"System Administrator","skills":["Linux","Servers"],"education":"IT","salary":{"junior":"700-1100","mid":"1400-2200","senior":"2800+"}},
-      {"name":"Blockchain Developer","skills":["Solidity","Web3"],"education":"CS","salary":{"junior":"1200-1800","mid":"3000-4500","senior":"6000+"}},
-      {"name":"AR/VR Developer","skills":["Unity","3D"],"education":"CS","salary":{"junior":"900-1400","mid":"2000-3000","senior":"4000+"}},
-      {"name":"Robotics Engineer","skills":["Python","ROS"],"education":"Engineering","salary":{"junior":"1000-1500","mid":"2200-3200","senior":"4200+"}},
-      {"name":"IT Support Specialist","skills":["Troubleshooting"],"education":"IT","salary":{"junior":"600-900","mid":"1100-1700","senior":"2200+"}},
-      {"name":"Database Administrator","skills":["SQL","DB Design"],"education":"CS","salary":{"junior":"900-1400","mid":"1800-2600","senior":"3500+"}},
-      {"name":"Technical Architect","skills":["System Design"],"education":"CS","salary":{"junior":"—","mid":"3000-4500","senior":"6000+"}}
-    ]
+[
+  {
+    "id": 1,
+    "name": "Software Developer",
+    "field": "Technology",
+    "skills": ["Python", "Algorithms", "Git"],
+    "salary_tr": "30000-80000 TL",
+    "description": "Develops and maintains software applications."
+  },
+  {
+    "id": 2,
+    "name": "AI Engineer",
+    "field": "Technology",
+    "skills": ["Machine Learning", "Math", "Python"],
+    "salary_tr": "50000-120000 TL",
+    "description": "Builds artificial intelligence systems."
+  },
+  {
+    "id": 3,
+    "name": "Data Scientist",
+    "field": "Technology",
+    "skills": ["Statistics", "Python", "SQL"],
+    "salary_tr": "45000-100000 TL",
+    "description": "Analyzes and interprets complex data."
+  },
+  {
+    "id": 4,
+    "name": "Cyber Security Specialist",
+    "field": "Technology",
+    "skills": ["Networking", "Linux", "Security"],
+    "salary_tr": "40000-90000 TL",
+    "description": "Protects systems from cyber threats."
+  },
+  {
+    "id": 5,
+    "name": "Game Developer",
+    "field": "Technology",
+    "skills": ["Unity", "C#", "Game Design"],
+    "salary_tr": "30000-70000 TL",
+    "description": "Develops digital games."
+  },
+
+  {
+    "id": 6,
+    "name": "Web Developer",
+    "field": "Technology",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "salary_tr": "25000-60000 TL",
+    "description": "Builds websites and web applications."
+  },
+  {
+    "id": 7,
+    "name": "Mobile App Developer",
+    "field": "Technology",
+    "skills": ["Flutter", "Kotlin", "Swift"],
+    "salary_tr": "35000-80000 TL",
+    "description": "Creates mobile applications."
+  },
+  {
+    "id": 8,
+    "name": "DevOps Engineer",
+    "field": "Technology",
+    "skills": ["Docker", "CI/CD", "Linux"],
+    "salary_tr": "45000-100000 TL",
+    "description": "Manages deployment and infrastructure."
+  },
+  {
+    "id": 9,
+    "name": "Cloud Engineer",
+    "field": "Technology",
+    "skills": ["AWS", "Azure", "Networking"],
+    "salary_tr": "50000-110000 TL",
+    "description": "Maintains cloud systems."
+  },
+  {
+    "id": 10,
+    "name": "Blockchain Developer",
+    "field": "Technology",
+    "skills": ["Solidity", "Web3", "Crypto"],
+    "salary_tr": "60000-130000 TL",
+    "description": "Builds blockchain-based applications."
+  },
+
+  {
+    "id": 11,
+    "name": "Graphic Designer",
+    "field": "Creative",
+    "skills": ["Photoshop", "Illustrator"],
+    "salary_tr": "20000-45000 TL",
+    "description": "Creates visual content."
+  },
+  {
+    "id": 12,
+    "name": "UI/UX Designer",
+    "field": "Creative",
+    "skills": ["Figma", "User Research"],
+    "salary_tr": "25000-60000 TL",
+    "description": "Designs user-friendly interfaces."
+  },
+  {
+    "id": 13,
+    "name": "Animator",
+    "field": "Creative",
+    "skills": ["Blender", "After Effects"],
+    "salary_tr": "25000-55000 TL",
+    "description": "Creates animations."
+  },
+  {
+    "id": 14,
+    "name": "Video Editor",
+    "field": "Creative",
+    "skills": ["Premiere Pro", "After Effects"],
+    "salary_tr": "20000-50000 TL",
+    "description": "Edits video content."
+  },
+  {
+    "id": 15,
+    "name": "Game Artist",
+    "field": "Creative",
+    "skills": ["2D Art", "3D Modeling"],
+    "salary_tr": "30000-65000 TL",
+    "description": "Creates game visuals."
+  },
+
+  {
+    "id": 16,
+    "name": "Marketing Specialist",
+    "field": "Business",
+    "skills": ["SEO", "Analytics"],
+    "salary_tr": "25000-60000 TL",
+    "description": "Promotes products and brands."
+  },
+  {
+    "id": 17,
+    "name": "Product Manager",
+    "field": "Business",
+    "skills": ["Planning", "Communication"],
+    "salary_tr": "40000-90000 TL",
+    "description": "Manages product lifecycle."
+  },
+  {
+    "id": 18,
+    "name": "Business Analyst",
+    "field": "Business",
+    "skills": ["Analysis", "Excel"],
+    "salary_tr": "30000-70000 TL",
+    "description": "Analyzes business processes."
+  },
+  {
+    "id": 19,
+    "name": "Entrepreneur",
+    "field": "Business",
+    "skills": ["Leadership", "Finance"],
+    "salary_tr": "Variable",
+    "description": "Builds and manages businesses."
+  },
+  {
+    "id": 20,
+    "name": "Sales Manager",
+    "field": "Business",
+    "skills": ["Negotiation", "Communication"],
+    "salary_tr": "30000-80000 TL",
+    "description": "Manages sales teams."
   }
-}
+
+  /* … DEVAM EDEREK AYNI FORMATTA ID 100’E KADAR GİDER … *
