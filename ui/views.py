@@ -3,31 +3,70 @@ from discord.ui import View, Button
 from services.database import save_interest
 from services.recommendation import recommend
 
-class InterestView(View):
+FIELDS = {
+    "Technology": "💻",
+    "Creative": "🎨",
+    "Business": "📊",
+    "Health": "🩺"
+}
+
+class CareerFieldView(View):
     def __init__(self, user_id):
         super().__init__(timeout=60)
         self.user_id = user_id
 
-    @discord.ui.button(label="Technology", style=discord.ButtonStyle.primary)
-    async def tech(self, interaction: discord.Interaction, button: Button):
-        await self.process(interaction, "Technology")
+        for field, emoji in FIELDS.items():
+            self.add_item(
+                Button(
+                    label=field,
+                    emoji=emoji,
+                    style=discord.ButtonStyle.primary,
+                    custom_id=field
+                )
+            )
 
-    @discord.ui.button(label="Creative", style=discord.ButtonStyle.success)
-    async def creative(self, interaction: discord.Interaction, button: Button):
-        await self.process(interaction, "Creative")
+    async def interaction_check(self, interaction: discord.Interaction) -> bool:
+        return interaction.user.id == self.user_id
 
-    async def process(self, interaction, interest):
-        save_interest(self.user_id, interest)
-        careers = recommend(interest)
+    async def on_timeout(self):
+        for item in self.children:
+            item.disabled = True
 
-        msg = f"**Recommended Careers ({interest})**\n\n"
+class FieldButton(Button):
+    def __init__(self, field, user_id):
+        super().__init__(
+            label=field,
+            style=discord.ButtonStyle.primary
+        )
+        self.field = field
+        self.user_id = user_id
+
+    async def callback(self, interaction: discord.Interaction):
+        save_interest(self.user_id, self.field)
+        careers = recommend(self.field)
+
+        if not careers:
+            await interaction.response.send_message(
+                "❌ No careers found for this field.",
+                ephemeral=True
+            )
+            return
+
+        msg = f"## {FIELDS[self.field]} {self.field.upper()} CAREERS\n\n"
+
         for c in careers:
             msg += (
-                f"**{c['name']}**\n"
-                f"Salary: {c['salary_tr']}\n"
-                f"{c['description']}\n\n"
+                f"### {c['name']}\n"
+                f"💰 Salary: {c['salary_tr']}\n"
+                f"🧠 Skills: {', '.join(c['skills'])}\n"
+                f"📄 {c['description']}\n\n"
             )
 
         await interaction.response.send_message(msg, ephemeral=True)
 
 
+def get_field_view(user_id):
+    view = View(timeout=60)
+    for field in FIELDS:
+        view.add_item(FieldButton(field, user_id))
+    return view
