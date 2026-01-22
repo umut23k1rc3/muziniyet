@@ -2,89 +2,26 @@
   "technology": {
     "title": "Technology Careers",
     "careers": [
-      {
-        "name": "Software Developer",
-        "skills": ["Python", "Algorithms", "Problem Solving", "Git"],
-        "education": "Computer Science or related field",
-        "salary": {
-          "junior": "800 - 1200 USD",
-          "mid": "1500 - 2500 USD",
-          "senior": "3000+ USD"
-        }
-      },
-      {
-        "name": "Data Scientist",
-        "skills": ["Python", "Statistics", "Machine Learning", "SQL"],
-        "education": "Computer Science, Statistics or Engineering",
-        "salary": {
-          "junior": "1000 - 1500 USD",
-          "mid": "2000 - 3500 USD",
-          "senior": "4000+ USD"
-        }
-      },
-      {
-        "name": "Cyber Security Specialist",
-        "skills": ["Networking", "Linux", "Security Tools", "Risk Analysis"],
-        "education": "IT, Cyber Security or related field",
-        "salary": {
-          "junior": "900 - 1400 USD",
-          "mid": "1800 - 3000 USD",
-          "senior": "3500+ USD"
-        }
-      }
-    ]
-  },
-
-  "creative": {
-    "title": "Creative Careers",
-    "careers": [
-      {
-        "name": "UI/UX Designer",
-        "skills": ["Figma", "User Research", "Wireframing"],
-        "education": "Design or self-taught with portfolio",
-        "salary": {
-          "junior": "700 - 1100 USD",
-          "mid": "1300 - 2200 USD",
-          "senior": "2800+ USD"
-        }
-      },
-      {
-        "name": "Graphic Designer",
-        "skills": ["Photoshop", "Illustrator", "Creativity"],
-        "education": "Graphic Design or portfolio-based",
-        "salary": {
-          "junior": "600 - 1000 USD",
-          "mid": "1200 - 2000 USD",
-          "senior": "2500+ USD"
-        }
-      }
-    ]
-  },
-
-  "business": {
-    "title": "Business Careers",
-    "careers": [
-      {
-        "name": "Product Manager",
-        "skills": ["Communication", "Roadmapping", "Analytics"],
-        "education": "Business, Engineering or related field",
-        "salary": {
-          "junior": "1000 - 1600 USD",
-          "mid": "2000 - 3500 USD",
-          "senior": "4000+ USD"
-        }
-      },
-      {
-        "name": "Digital Marketing Specialist",
-        "skills": ["SEO", "Ads", "Content Strategy"],
-        "education": "Marketing or self-taught",
-        "salary": {
-          "junior": "700 - 1200 USD",
-          "mid": "1500 - 2500 USD",
-          "senior": "3000+ USD"
-        }
-      }
+      {"name":"Software Developer","skills":["Python","Git","Algorithms"],"education":"Computer Science","salary":{"junior":"800-1200","mid":"1500-2500","senior":"3000+"}},
+      {"name":"Web Developer","skills":["HTML","CSS","JavaScript"],"education":"CS or Self-taught","salary":{"junior":"700-1100","mid":"1400-2200","senior":"2800+"}},
+      {"name":"Mobile App Developer","skills":["Flutter","Kotlin","Swift"],"education":"CS","salary":{"junior":"900-1300","mid":"1700-2600","senior":"3200+"}},
+      {"name":"Game Developer","skills":["Unity","C#","Game Logic"],"education":"CS or Game Design","salary":{"junior":"800-1200","mid":"1500-2300","senior":"3000+"}},
+      {"name":"Data Analyst","skills":["SQL","Excel","Python"],"education":"Statistics","salary":{"junior":"900-1400","mid":"1600-2400","senior":"3000+"}},
+      {"name":"Data Scientist","skills":["Python","ML","Statistics"],"education":"CS / Statistics","salary":{"junior":"1000-1500","mid":"2200-3500","senior":"4500+"}},
+      {"name":"AI Engineer","skills":["ML","Deep Learning","Python"],"education":"Engineering","salary":{"junior":"1200-1800","mid":"3000-4500","senior":"6000+"}},
+      {"name":"Cyber Security Specialist","skills":["Linux","Networking","Security"],"education":"IT","salary":{"junior":"900-1400","mid":"2000-3000","senior":"4000+"}},
+      {"name":"Cloud Engineer","skills":["AWS","Docker","Linux"],"education":"CS","salary":{"junior":"1000-1600","mid":"2500-4000","senior":"5000+"}},
+      {"name":"DevOps Engineer","skills":["CI/CD","Docker","Kubernetes"],"education":"CS","salary":{"junior":"1100-1700","mid":"2800-4200","senior":"5500+"}},
+      {"name":"QA Engineer","skills":["Testing","Automation","Python"],"education":"CS","salary":{"junior":"700-1100","mid":"1300-2000","senior":"2600+"}},
+      {"name":"Embedded Systems Engineer","skills":["C","Microcontrollers"],"education":"Electrical Eng","salary":{"junior":"900-1400","mid":"1800-2600","senior":"3500+"}},
+      {"name":"Network Engineer","skills":["Routing","Switching"],"education":"IT","salary":{"junior":"800-1200","mid":"1500-2300","senior":"3000+"}},
+      {"name":"System Administrator","skills":["Linux","Servers"],"education":"IT","salary":{"junior":"700-1100","mid":"1400-2200","senior":"2800+"}},
+      {"name":"Blockchain Developer","skills":["Solidity","Web3"],"education":"CS","salary":{"junior":"1200-1800","mid":"3000-4500","senior":"6000+"}},
+      {"name":"AR/VR Developer","skills":["Unity","3D"],"education":"CS","salary":{"junior":"900-1400","mid":"2000-3000","senior":"4000+"}},
+      {"name":"Robotics Engineer","skills":["Python","ROS"],"education":"Engineering","salary":{"junior":"1000-1500","mid":"2200-3200","senior":"4200+"}},
+      {"name":"IT Support Specialist","skills":["Troubleshooting"],"education":"IT","salary":{"junior":"600-900","mid":"1100-1700","senior":"2200+"}},
+      {"name":"Database Administrator","skills":["SQL","DB Design"],"education":"CS","salary":{"junior":"900-1400","mid":"1800-2600","senior":"3500+"}},
+      {"name":"Technical Architect","skills":["System Design"],"education":"CS","salary":{"junior":"—","mid":"3000-4500","senior":"6000+"}}
     ]
   }
 }
-
